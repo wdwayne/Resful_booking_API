@@ -43,6 +43,7 @@ Mitigation: Run performance tests to ensure enpoints are able to handle large tr
 
 ### Entry Criteria
 - Application is accessible
+- Valid login credentials
 
 ### Exit Criteria
-- All test cases executed
+- All End points Tested

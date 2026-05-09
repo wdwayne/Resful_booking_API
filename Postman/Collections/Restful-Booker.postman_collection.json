@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "93be0a1a-0b24-43d3-a62c-3b527db588dc",
-    "name": "Restful Booker",
+    "name": "Restful-Booker",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "17912757"
   },
@@ -15,6 +15,10 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is below 500ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
               "});\r",
               "\r",
               "pm.test(\"Token is returned\", function () {\r",
@@ -80,11 +84,18 @@
               "    pm.response.to.have.status(200);\r",
               "});\r",
               "\r",
+              "pm.test(\"Response time is below 1000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+              "});\r",
               "\r",
               "pm.test(\"Response has expected structure\", function () {\r",
               "    const jsonData = pm.response.json();\r",
               "    pm.expect(jsonData).to.be.an(\"array\");\r",
-              "});"
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is below 500ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "}); "
             ],
             "type": "text/javascript",
             "packages": {},
@@ -141,7 +152,11 @@
               "pm.test(\"Booking ID is a number\", function () {\r",
               "    pm.expect(jsonData.bookingid).to.be.a('number');\r",
               "})\r",
-              "pm.environment.set(\"bookingId\", jsonData.bookingid);"
+              "pm.environment.set(\"bookingId\", jsonData.bookingid);\r",
+              "\r",
+              "pm.test(\"Response time is below 500ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "});"
             ],
             "type": "text/javascript",
             "packages": {},
@@ -165,7 +180,7 @@
         "header": [
           {
             "key": "Cookie",
-            "value": "{{token}}",
+            "value": "token={{token}}",
             "type": "text"
           }
         ],
@@ -202,6 +217,10 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is below 1000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
               "});\r",
               "\r",
               "\r",
@@ -451,7 +470,7 @@
       "response": []
     },
     {
-      "name": "DeleteInvalidID",
+      "name": "DeleteBooking_InvalidId",
       "event": [
         {
           "listen": "test",
@@ -504,7 +523,7 @@
       "response": []
     },
     {
-      "name": "UpdateBookingWithInvalidId",
+      "name": "UpdateBooking_InvalidId",
       "event": [
         {
           "listen": "test",
@@ -569,7 +588,7 @@
       "response": []
     },
     {
-      "name": "PartialUpdateBookingInvalidId",
+      "name": "PartialUpdateBooking_InvalidId",
       "event": [
         {
           "listen": "test",
