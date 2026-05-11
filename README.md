@@ -1,4 +1,5 @@
 # Restful Booker API Test Project
+![API](https://github.com/wdwayne/Resful_booking_API/actions/workflows/api-tests.yml/badge.svg)
 
 ## 📌 Project Overview
 This project focuses on automated API testing of the Restful Booker application using Postman and Newman.
@@ -96,4 +97,8 @@ Dwayne Williams
 Software Quality Assurance Analyst 
 
 
-## 📊 Test Report Screenshots
+## 📊 Newman HTML Report
+![alt text](image.png)
+
+## 🔄 GitHub Actions CI Pipeline
+![alt text](image-1.png)
