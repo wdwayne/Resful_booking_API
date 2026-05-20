@@ -98,7 +98,7 @@ Software Quality Assurance Analyst
 
 
 ## 📊 Newman HTML Report
-![alt text](image.png)
+![newman html report](image.png)
 
 ## 🔄 GitHub Actions CI Pipeline
 ![alt text](image-1.png)

@@ -39,7 +39,7 @@ Risk: Enpoints unable to handle large traffic
 Mitigation: Run performance tests to ensure enpoints are able to handle large traffic
 
 Risk: Submitting booking requests with incomplete data/information.
-Mitigation: Perform validations tests to 
+Mitigation: Perform validation tests to ensure these issues are found and addressed
 
 
 ## Entry and Exit criteria
