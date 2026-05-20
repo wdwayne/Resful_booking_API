@@ -38,6 +38,9 @@ Mitigation: Verify that users are not allowed access to protected endpoints with
 Risk: Enpoints unable to handle large traffic
 Mitigation: Run performance tests to ensure enpoints are able to handle large traffic
 
+Risk: Submitting booking requests with incomplete data/information.
+Mitigation: Perform validations tests to 
+
 
 ## Entry and Exit criteria
 
